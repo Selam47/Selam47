@@ -36,3 +36,17 @@ void main() {
     print(arabalar[i]);
   }
 }
+
+//Fonksiyonlarr
+void main() {
+  selamVer();
+  selamVer2("Mehmet");
+}
+
+void selamVer() {
+  print("merhaba");
+}
+
+void selamVer2(String kullanici) {
+  print("Selam" + kullanici);
+}
