@@ -1,0 +1,38 @@
+Dart Dili
+
+//Şart Blokları
+void main() {
+  
+  int puan = 55;
+if(puan>=56)
+{
+  print("Geçti");
+}
+  else{
+    print("Kaldı");
+  }
+  String not = 'A';
+
+  switch(not){
+    case "A": print("Geçer");
+    case "B": print("NOTUNUZ");
+  }
+}
+//*Listeleme
+void main() {
+  var ulkeler = new List(4);
+  ulkeler[0] = "norvec";
+  ulkeler[1] = "kanada";
+  ulkeler[2] = "romanya";
+  ulkeler[3] = "ingiltere";
+  print(ulkeler);
+}
+
+//Döngüler
+void main() {
+  var arabalar = ["kia", "hyundai", "togg"];
+
+  for (var i = 0; i < arabalar.length; i++) {
+    print(arabalar[i]);
+  }
+}
