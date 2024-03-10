@@ -50,3 +50,44 @@ void selamVer() {
 void selamVer2(String kullanici) {
   print("Selam" + kullanici);
 }
+
+//class Methodu
+void main() {
+  var personalManager = PersonalManager();
+  personalManager.add();
+
+  var customerManager = CustomerManager();
+  var customer = new Customer("Selam", "Kaya");
+
+  customerManager.add(customer);
+}
+
+class PersonalManager {
+  void add() {
+    print("eklendi...");
+  }
+
+  void guncelle() {
+    print("güncellendi.");
+  }
+}
+
+class CustomerManager {
+  void add(Customer customer) {
+    print("eklendi: " + customer.firstName);
+  }
+
+  void guncelle() {
+    print("güncellendi.");
+  }
+}
+
+class Customer {
+  String firstName;
+  String lastName;
+
+  Customer(String firstName, String lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
