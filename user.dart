@@ -1,11 +1,7 @@
 class User {
-  User({required this.email, required this.name, required this.lastName}) {}
-
-  late String email;
-  String? name;
-  String? lastName;
-
-  void displayInfo() {
-    print("$name $lastName - $email");
-  }
+  String id;
+  String username;
+  String email;
+  
+  User(this.id, this.username, this.email);
 }
