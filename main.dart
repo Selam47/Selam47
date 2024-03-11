@@ -26,3 +26,10 @@ void main() {
       customerType: CustomerType.Indiviual);
   customer.displayInfo();
 }
+
+
+//user.dart
+void main() {
+  var user = User('1', 'kullanici_adi', 'ornek@email.com');
+  print('Kullanıcı Adı: ${user.username}, E-posta: ${user.email}');
+  }
